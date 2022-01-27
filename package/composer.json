@@ -1,0 +1,42 @@
+{
+    "name": "oluwatosin/blog",
+    "description": "This is a blog api package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Oluwatosin\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oluwatosin Amokeodo",
+            "email": "oluwatosin.amokeodo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|8.0",
+        "crazybooot/base64-validation": "^1.0",
+        "intervention/image": "^2.7",
+        "mews/purifier": "^3.3"
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Oluwatosin\\Blog\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.24",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Oluwatosin\\Blog\\Providers\\BlogServiceProvider"
+            ]
+        }
+    }
+}
